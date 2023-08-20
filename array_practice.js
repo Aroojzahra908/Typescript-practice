@@ -98,40 +98,6 @@ while (index <= 10) {
 }
 // question no 5:
 // Create a function that takes a positive integer as parameter and uses a while loop to calculate and return the factorial of that number.
-// function factorial(num1:number){
-//     while(num1>=1){
-//         var fact:number=1;
-//         fact*num1;
-//         console.log(num1)
-//     }
-//     num1--;
-//     console.log(num1)
-//     return factorial;
-// }
-// factorial(55)
-function factorialize(num) {
-    // Step 1. Create a variable result to store num
-    var result = num;
-    // If num = 0 OR num = 1, the factorial will return 1
-    if (num === 0 || num === 1)
-        return 1;
-    // Step 2. Create the WHILE loop 
-    while (num > 1) {
-        num--; // decrementation by 1 at each iteration
-        result = result * num; // or result *= num; 
-        /*
-                        num           num--      var result      result *= num
-        1st iteration:   5             4            5             20 = 5 * 4
-        2nd iteration:   4             3           20             60 = 20 * 3
-        3rd iteration:   3             2           60            120 = 60 * 2
-        4th iteration:   2             1          120            120 = 120 * 1
-        5th iteration:   1             0          120
-        End of the WHILE loop
-        */
-    }
-    // Step 3. Return the factorial of the provided integer
-    return result; // 120
-}
 function factorial(num) {
     var result = 1; // Initialize result to 1
     while (num > 1) {
@@ -140,4 +106,49 @@ function factorial(num) {
     }
     return result;
 }
-console.log(factorial(1)); // Output: 120
+console.log(factorial(5)); // Output: 120
+//working
+/*
+                num           num--      var result      result *= num
+1st iteration:   5             4            5             20 = 5 * 4
+2nd iteration:   4             3           20             60 = 20 * 3
+3rd iteration:   3             2           60            120 = 60 * 2
+4th iteration:   2             1          120            120 = 120 * 1
+5th iteration:   1             0          120
+End of the WHILE loop
+*/
+//Question no6:
+// Write a program having an array of numbers if the number is negative, it should remove the negative number from the array.
+// filter method to create a new array that contains only the numbers greater than or equal to 0.
+//simple array method 1:
+// the arrow function item => item >= 0 correctly represents the filtering condition where each item 
+// in the array is checked whether it's greater than or equal to 0. The resulting array a will only 
+// contain the non-negative numbers.
+var array = [1, 2, 3, -1, -2, -3, 45];
+var a = array.filter((item) => item >= 0);
+console.log(a);
+//array by using function method 2:
+function isPositive(item) {
+    return item >= 0;
+}
+var array = [1, 2, 3, -1, -2, -3, 45];
+var a = array.filter(isPositive);
+console.log(a);
+// Question no7:
+// Create a function that takes an array of numbers as parameters.Use a while loop to calculate and return the sum of all the 
+// numbers in the array?
+function SumOfArray(values) {
+    var sum = 0;
+    var index = 0;
+    while (index < values.length) {
+        sum = sum + values[index];
+        index++;
+    }
+    return sum;
+}
+var value2 = [1, 2, 3, 4, 5, 6];
+var a = SumOfArray(value2);
+console.log(a);
+// Question no 8:
+// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted 
+// temperatures in an array. Use a while loop to perform the conversion for each temperature

@@ -4,12 +4,12 @@
 var todos:string[]=["arooj", "ali","areeba","Aline","Aiza","Rameen"];
 if(todos.length % 2==0){
     var a= Math.floor(todos.length/2)
-todos.splice(a,2);
+todos.splice(a-1,2);
 console.log("the number is even",todos);
 }
 else if(todos.length %2 !=0){
 var b= Math.floor(todos.length/2)
-    todos.splice(b,1)
+    todos.splice(b-1,1)
     console.log("the number is odd",todos);
 }
 else{
@@ -135,5 +135,43 @@ console.log(factorial(5)); // Output: 120
       5th iteration:   1             0          120
       End of the WHILE loop 
       */
-   
+//Question no6:
+// Write a program having an array of numbers if the number is negative, it should remove the negative number from the array.
 
+// filter method to create a new array that contains only the numbers greater than or equal to 0.
+//simple array method 1:
+
+// the arrow function item => item >= 0 correctly represents the filtering condition where each item 
+// in the array is checked whether it's greater than or equal to 0. The resulting array a will only 
+// contain the non-negative numbers.
+var array: any = [1, 2, 3, -1, -2, -3, 45];
+var a:number= array.filter((item: number) => item >= 0);
+console.log(a);
+
+//array by using function method 2:
+function isPositive(item: number){
+    return item >= 0;
+}
+var array: any = [1, 2, 3, -1, -2, -3, 45];
+var a:number = array.filter(isPositive);
+console.log(a);
+
+// Question no7:
+// Create a function that takes an array of numbers as parameters.Use a while loop to calculate and return the sum of all the 
+// numbers in the array?
+function SumOfArray(values:any){
+    var sum = 0;
+    var index = 0;
+    while (index < values.length) {
+        sum = sum + values[index];
+        index++;
+    }
+    return sum;
+}
+var value2:any = [1, 2, 3, 4, 5, 6];
+var a = SumOfArray(value2);
+console.log(a);
+
+// Question no 8:
+// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted 
+// temperatures in an array. Use a while loop to perform the conversion for each temperature
