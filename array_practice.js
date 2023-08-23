@@ -4,12 +4,12 @@
 var todos = ["arooj", "ali", "areeba", "Aline", "Aiza", "Rameen"];
 if (todos.length % 2 == 0) {
     var a = Math.floor(todos.length / 2);
-    todos.splice(a, 2);
+    todos.splice(a - 1, 2);
     console.log("the number is even", todos);
 }
 else if (todos.length % 2 != 0) {
     var b = Math.floor(todos.length / 2);
-    todos.splice(b, 1);
+    todos.splice(b - 1, 1);
     console.log("the number is odd", todos);
 }
 else {
@@ -152,3 +152,13 @@ console.log(a);
 // Question no 8:
 // Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted 
 // temperatures in an array. Use a while loop to perform the conversion for each temperature
+var celsiusTemperatures = [0, 10, 20, 30, 40];
+var convertedTemperatures = [];
+var index = 0;
+while (index < celsiusTemperatures.length) {
+    var celsius = celsiusTemperatures[index];
+    var fahrenheit = (celsius * 9 / 5) + 32;
+    convertedTemperatures.push(fahrenheit);
+    index++;
+}
+console.log("Converted Temperatures:", convertedTemperatures);

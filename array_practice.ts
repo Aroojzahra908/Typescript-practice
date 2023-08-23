@@ -175,3 +175,15 @@ console.log(a);
 // Question no 8:
 // Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted 
 // temperatures in an array. Use a while loop to perform the conversion for each temperature
+var celsiusTemperatures = [0, 10, 20, 30, 40];
+var convertedTemperatures = [];
+var index = 0;
+
+while (index < celsiusTemperatures.length) {
+    var celsius = celsiusTemperatures[index];
+    var fahrenheit = (celsius * 9/5) + 32;
+    convertedTemperatures.push(fahrenheit);
+    index++;
+}
+
+console.log("Converted Temperatures:", convertedTemperatures);
