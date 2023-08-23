@@ -40,6 +40,51 @@ function calculateCircleArea(radius) {
     var area = Math.PI * radius * radius;
     return area;
 }
-var radius = 5; // Replace with the desired radius
-var circleArea = calculateCircleArea(radius);
-console.log("The area of the circle with radius", radius, "is:", circleArea);
+// var radius:number = 5; // Replace with the desired radius
+var circleArea = calculateCircleArea(56);
+console.log("The area of the circle with radius is:", circleArea);
+// Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from 
+// the array.
+var grades = [85, 40, 65, 90, 30, 70, 55, 75, 48, 92];
+console.log("Original grades:", grades);
+for (var i = 0; i < grades.length; i++) {
+    if (grades[i] < 50) {
+        grades.splice(i, 1);
+    }
+}
+console.log("Grades after removing failing grades:", grades);
+// Write a program that uses a function to find the largest element in an array of numbers.
+var numbers = [12, 45, 7, 89, 34, 67, 23, 56];
+if (numbers.length > 0) {
+    var largestNumber = Math.max(...numbers);
+    console.log("The largest number in the array is:", largestNumber);
+}
+else {
+    console.log("The array is empty.");
+}
+//second method:
+// function largest(arr:any) {
+//     var largestNumber = arr[0]; 
+//     for (var i = 1; i < arr.length; i++) {
+//         if (arr[i] > largestNumber) {
+//             largestNumber = arr[i];
+//         }
+// }
+//     return largestNumber;
+// }
+// var numbers = [44, 4433, 63, 278, 27];
+// var largestNumber:number = largest(numbers);
+// console.log("The largest number in the array is:", largestNumber);
+//for min
+function largest(arr) {
+    var largestNumber = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] < largestNumber) {
+            largestNumber = arr[i];
+        }
+    }
+    return largestNumber;
+}
+var numbers = [44, 4433, 63, 278, 27];
+var largestNumber = largest(numbers);
+console.log("The largest number in the array is:", largestNumber);
