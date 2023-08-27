@@ -39,6 +39,7 @@ for (var i = 0;i<=numbers.length; i++) {
 }
 console.log("Array after removing even numbers:", numbers);
 
+
 // Write a program that defines a function to calculate the area of a circle. The function should take the radius as 
 // input and return the calculated area.
 function calculateCircleArea(radius:number) {
@@ -93,6 +94,6 @@ function largest(arr:any) {
 }
     return largestNumber;
 }
-var numbers = [44, 4433, 63, 278, 27];
+var numbers = [44, 4433, 63, 278, 27]
 var largestNumber:number = largest(numbers);
 console.log("The largest number in the array is:", largestNumber);
