@@ -112,13 +112,9 @@ var random_number:number=Math.random()
 console.log(random_number)
 });
 
+
 // resolve: we use .then
 // reject : for error we use .catch function 
-
-
-
-
-
 
 
 
@@ -132,3 +128,7 @@ console.log(random_number)
 // let cars:objtypes={
     
 // }
+
+
+
+
