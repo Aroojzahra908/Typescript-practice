@@ -42,7 +42,6 @@ console.log("end");
 // console.log("end")
 
 // 4
-
 function time(){
     var time = new Date();
     var new_time= time.toLocaleTimeString()
@@ -129,6 +128,16 @@ console.log(random_number)
     
 // }
 
+// npm init 
+// tsc --init 
+
+// line 28 (tscconfiq)
+// line 30 
+
+// package.json:
+// type module
 
 
-
+// npm inquirer(search)
+// npm i inqurer
+// readme (datatype)
