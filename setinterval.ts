@@ -34,3 +34,7 @@ const handle = setInterval((): void => {
     console.log('This will be displayed every 1000ms (1s).');
   }, 1000);
 clearInterval(handle);             // stops intevel
+
+
+
+https://www.youtube.com/shorts/gWFnX11kmtM
