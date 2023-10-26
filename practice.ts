@@ -92,7 +92,8 @@ console.log(car2)
     brand : string = "";
 
     constructor(_model:string , _brand:string){
-        // this >>>>> jis variable mn call kr rhy hain usi variable mn ja ke store hogi
+        
+    // this >>>>> jis variable mn call kr rhy hain usi variable mn ja ke store hogi
       this.model= _model;
       this.brand=_brand;
     
@@ -110,34 +111,11 @@ var promise = new Promise((resolve, reject)=>{              // receive promise k
 var random_number:number=Math.random()
 console.log(random_number)
 });
-
-
 // resolve: we use .then
 // reject : for error we use .catch function 
-
-
-
-
-
 // difference between type and class
-// type objtypes = {
-//     name:string,
-//     price:string,
-// }
-// let cars:objtypes={
-    
-// }
 
-// npm init 
-// tsc --init 
+// setInterval((): void => {
+//     console.log('This will be displayed every 1000ms (1s).');
+//   }, 1000);
 
-// line 28 (tscconfiq)
-// line 30 
-
-// package.json:
-// type module
-
-
-// npm inquirer(search)
-// npm i inqurer
-// readme (datatype)
