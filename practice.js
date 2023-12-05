@@ -102,12 +102,9 @@ var promise = new Promise((resolve, reject) => {
     var random_number = Math.random();
     console.log(random_number);
 });
-// resolve:
-// reject :
+// resolve: we use .then
+// reject : for error we use .catch function 
 // difference between type and class
-// type objtypes = {
-//     name:string,
-//     price:string,
-// }
-// let cars:objtypes={
-// }
+// setInterval((): void => {
+//     console.log('This will be displayed every 1000ms (1s).');
+//   }, 1000);
