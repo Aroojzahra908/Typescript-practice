@@ -37,4 +37,3 @@ clearInterval(handle);             // stops intevel
 
 
 
-// https://www.youtube.com/shorts/gWFnX11kmtM
